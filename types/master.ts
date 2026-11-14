@@ -1,0 +1,27 @@
+export interface Category {
+    id: number
+    name: string
+    description: string | null
+    items_count?: number
+    created_at?: string
+    updated_at?: string
+}
+
+export interface CategoryPayload {
+    name: string
+    description?: string
+}
+
+export interface Unit {
+    id: number
+    name: string
+    abbreviation: string | null
+    items_count?: number
+    created_at?: string
+    updated_at?: string
+}
+
+export interface UnitPayload {
+    name: string
+    abbreviation?: string
+}
